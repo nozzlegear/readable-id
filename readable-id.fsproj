@@ -1,0 +1,30 @@
+﻿<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6</TargetFrameworks>
+    <AssemblyName>ReadableId</AssemblyName>
+    <Version>1.0.0-beta-1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Description>Generates a readable unique id in the form of AdjectiveAdjectiveAnimal. Credit goes to Gfycat for both the idea and the list of words.</Description>
+    <Authors>Nozzlegear</Authors>
+    <Copyright>Nozzlegear Software</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/nozzlegear/readable-id/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/nozzlegear/readable-id</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nozzlegear/readable-id</RepositoryUrl>
+    <PackageTags>gfycat,id,guid</PackageTags>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Compile Include="Words.fs" />
+    <Compile Include="Library.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="4.1.*" />
+    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.*" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
